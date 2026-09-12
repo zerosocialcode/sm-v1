@@ -1,0 +1,113 @@
+{
+  "id": "spectremirror",
+  "name": "SpectreMirror",
+  "description": "Mirror any webpage, harvest assets, and package into offline-ready bundles.",
+  "version": "1.0.0",
+  "category": "Utilities",
+  "keywords": [
+    "clone",
+    "clone site-url",
+    "mirror",
+    "website",
+    "webpage",
+    "assets",
+    "offline",
+    "archive",
+    "html",
+    "scrape",
+    "download site",
+    "site-url",
+    "harvest"
+  ],
+  "intents": [
+    "clone_website",
+    "mirror_url",
+    "save_webpage",
+    "download_site",
+    "offline_bundle"
+  ],
+  "produces": [
+    "application/zip",
+    "text/html"
+  ],
+  "accepts": [
+    "text/uri-list",
+    "text/html"
+  ],
+  "open": "embed",
+  "disabled": false,
+  "actions": [
+    {
+      "label": "Clone site URL",
+      "aliases": [
+        "clone site-url",
+        "clone site url",
+        "clone site",
+        "clone website",
+        "clone webpage",
+        "clone url",
+        "mirror site",
+        "mirror website",
+        "mirror url",
+        "save site offline",
+        "download site"
+      ],
+      "path": "?mode=clone"
+    },
+    {
+      "label": "Sandbox preview",
+      "aliases": [
+        "preview clone",
+        "view sandbox",
+        "test mirrored page",
+        "preview site",
+        "preview"
+      ],
+      "path": "?tab=preview"
+    },
+    {
+      "label": "Inspect cloned assets",
+      "aliases": [
+        "harvested files",
+        "view assets",
+        "cloned files",
+        "asset table",
+        "downloaded assets"
+      ],
+      "path": "?tab=assets"
+    },
+    {
+      "label": "Inspect HTML source",
+      "aliases": [
+        "view html",
+        "source diff",
+        "inspect html",
+        "view source",
+        "raw vs rewritten"
+      ],
+      "path": "?tab=source"
+    },
+    {
+      "label": "View technical metadata",
+      "aliases": [
+        "manifest",
+        "clone details",
+        "spec sheet",
+        "download zip",
+        "export bundle"
+      ],
+      "path": "?tab=metadata"
+    },
+    {
+      "label": "View live terminal logs",
+      "aliases": [
+        "terminal",
+        "engine logs",
+        "console output",
+        "stream logs",
+        "logs"
+      ],
+      "path": "?tab=terminal"
+    }
+  ]
+}
